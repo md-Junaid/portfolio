@@ -1,0 +1,222 @@
+@font-face {
+	font-family: segoesc;
+	src: url(../segoesc.ttf);
+}
+
+.large-hero {
+	position: relative;
+	height: 100%;
+
+	&__text-content1 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-20%);
+		width: 100%;
+		left: 0;
+		text-align: center;
+		height: 50%;
+
+		@mixin atSmall {
+			transform: translateY(-10%);
+		}
+
+		@mixin atLarge {
+			transform: translateY(-30%);
+		}
+	}
+
+	&__title {
+		font-family: segoesc;
+		font-size: 2.3rem;
+		margin:0;
+
+		@mixin atSmall {
+			font-size: 2.9rem;
+		}
+
+		@mixin atMedium {
+			font-size: 3.3rem;
+		}
+	}
+
+	&__subtitle {
+		margin:0;
+		font-size: 0.8rem;
+
+		@mixin atSmall {
+			font-size: 1rem;
+		}
+
+		@mixin atMedium{
+			font-size: 1.1rem;
+		}
+	}
+}
+
+.svg-wrapper {/*This svg animation was copied from this link "https://codepen.io/seanmccaffery/pen/xBpbG"*/
+	height: 60px;
+    margin: 0 auto;
+  	position: relative;
+  	top: 30%;
+  	/*transform: translateY(-10%);*/
+  	width: 18rem;
+
+  	@mixin atSmall {
+		width: 20rem;
+	}
+
+	@mixin atLarge {
+		top:25%;
+		width: 32rem;
+	}
+}
+
+.svg-wrapper svg {
+	width: 205px;
+	height: 40px;
+
+	@mixin atSmall {
+		width: 220px;
+		height: 50px;
+	}
+
+	@mixin atMedium {
+		width: 290px;
+		height: 55px;
+	}
+
+	@mixin atLarge {
+		width: 320px;
+		height: 60px;
+	}
+}
+
+.shape {
+  	fill: transparent;
+  	width: 200px;
+  	height: 40px;
+   	stroke-dasharray: 80 300;
+  	stroke-dashoffset: -300;
+  	stroke-width: 8px;
+  	stroke: #19f6e8;
+
+  	@mixin atSmall {
+		/*top: 33%;*/
+		width: 220px;
+		height: 50px;
+		stroke-dasharray: 100 329;
+  		stroke-dashoffset: -328;
+  		stroke-width: 8px;
+	}
+
+	@mixin atMedium {
+		width: 280px;
+		height: 55px;
+		stroke-dasharray: 100 415;
+  		stroke-dashoffset: -415;
+  		stroke-width: 8px;
+	}
+
+	@mixin atLarge {
+		width: 320px;
+		height: 60px;
+		stroke-dasharray: 140 540;
+  		stroke-dashoffset: -474;
+  		stroke-width: 8px;
+	}
+}
+
+.text {
+  	color: #fff;
+  	font-family: 'open Sans';
+  	font-weight: 300;
+  	font-size: 1rem;
+  	letter-spacing: 1px;
+  	line-height: 32px;
+  	position: relative;
+  	top: -36px;
+
+  	@mixin atSmall {
+		font-size: 1.1rem;
+		letter-spacing: 2px;
+		top: -40px;
+		font-weight: bold;
+	}
+
+	@mixin atMedium {
+		font-size: 1.3rem;
+		letter-spacing: 3px;
+		top: -44px;
+	}
+
+	@mixin atLarge {
+		top: -48px;
+		left: 0;
+		font-size: 1.5rem;
+		letter-spacing: 3px;
+	}
+}
+
+@keyframes draw {
+		0% {
+	    	stroke-dasharray: 80 300;
+	    	stroke-dashoffset: -300;
+	    	stroke-width: 8px;
+	  	}
+	  	100% {
+	    	stroke-dasharray: 760;
+	    	stroke-dashoffset: 0;
+	    	stroke-width: 2px;
+	  	}
+	}
+
+@mixin atSmall {
+	@keyframes draw {
+		0% {
+	    	stroke-dasharray: 100 329;
+	    	stroke-dashoffset: -328;
+	    	stroke-width: 8px;
+	  	}
+	  	100% {
+	    	stroke-dasharray: 760;
+	    	stroke-dashoffset: 0;
+	    	stroke-width: 2px;
+	  	}
+	}
+}
+
+@mixin atMedium {
+	@keyframes draw {
+		0% {
+	    	stroke-dasharray: 100 415;
+	    	stroke-dashoffset: -310;
+	    	stroke-width: 8px;
+	  	}
+	  	100% {
+	    	stroke-dasharray: 760;
+	    	stroke-dashoffset: 0;
+	    	stroke-width: 2px;
+	  	}
+	}
+}
+
+@mixin atLarge {
+
+	@keyframes draw {
+		0% {
+	    	stroke-dasharray: 100 425;
+	    	stroke-dashoffset: -425;
+	    	stroke-width: 8px;
+	  	}
+	  	100% {
+	    	stroke-dasharray: 760;
+	    	stroke-dashoffset: 0;
+	    	stroke-width: 2px;
+	  	}
+	}
+}
+
+.svg-wrapper:hover .shape {
+  	-webkit-animation: 0.5s draw linear forwards;
+	animation: 0.5s draw linear forwards;
+}

@@ -1,0 +1,49 @@
+.headline {
+	font-family: Open Sans;
+	margin: 25px auto;
+	font-size: 2rem;
+	font-weight: 600;
+
+	@mixin atSmall{
+		font-size: 1.875rem;
+	}
+
+	&__main-heading {
+		font-family: Open Sans Condensed;
+		font-size: 2.9rem;
+		font-weight: 600;
+		width: 290px;
+		text-align: center;
+		color: $mainheading;
+
+		@mixin atSmall {
+			width: 340px;
+			font-size: 3rem;
+		}
+
+		@mixin atMedium {
+			text-align: center;
+			font-family: Open Sans;
+			font-weight: 400;
+		}
+	}
+
+	&__sub-heading {
+		font-size: 1.675rem;
+		text-align: center;
+
+		@mixin atMedium {
+			width: 40.75rem;
+			text-align: left;
+		}
+
+		&__help {
+			text-align: center;
+			font-size: 0.9rem;
+
+			@mixin atSmall {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.wrapper {
+	/*background-color: green;*/
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+
+	&__main-heading {
+		width:300px;
+		margin-top: 20%;
+
+		@mixin atSmall {
+			width: 350px;
+			margin-top: 10%;
+		}
+
+		@mixin atMedium {
+			margin-top: 8%;
+		}
+	}
+}
