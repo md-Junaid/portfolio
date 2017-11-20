@@ -7,7 +7,7 @@
 	position: relative;
 	height: 100%;
 
-	&__text-content1 {
+	&__text-content {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-20%);

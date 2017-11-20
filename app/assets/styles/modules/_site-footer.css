@@ -1,0 +1,38 @@
+.site-footer {
+	background-color: $mainCreamcolor;
+	padding: .5rem 0;
+	text-align: center;
+
+	p {
+		color: $para;
+	}
+
+	a {
+		color: #ba8a00;
+	}
+
+	a:hover {
+		color: #000;
+	}
+
+	&__text {
+		display: block;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+
+		a {
+			padding-bottom: 1px;
+    		border-bottom: grey 1px solid;
+		}
+	}
+
+	&__links {
+		
+	}
+
+	ul li {
+		display: inline-block;
+		text-align: center;
+		padding-right: 40px;
+	}
+}
