@@ -21,7 +21,7 @@
 	&__about {
 		width: 27.75rem;
 		margin: 0 auto;
-		color: $para;
+		color: #111;
 		font-size: 1rem;
 		box-sizing: border-box;
 
@@ -44,6 +44,7 @@
 		@mixin atMedium {
 			width: 25.75rem;
 			text-align: left;
+			font-size: 1.1rem;
 		}
 	}
 
@@ -54,6 +55,7 @@
 
 		@mixin atSmall{
 			width: 40rem;
+			font-size: 1.1rem;
 		}
 	}
 
