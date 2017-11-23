@@ -10,6 +10,7 @@
 	&__main-heading {
 		width:300px;
 		margin-top: 20%;
+		margin-bottom: -90px;
 
 		@mixin atSmall {
 			width: 350px;
@@ -18,6 +19,10 @@
 
 		@mixin atMedium {
 			margin-top: 8%;
+		}
+
+		&--help {
+			margin-top: 15%;
 		}
 	}
 }

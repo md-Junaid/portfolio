@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Junaid - Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	<link rel="import" href="/awesome-button.html">
+	<script>('import' in document.createElement('link') && document.head.createShadowRoot) || document.write("<script src='https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js'><\/script>");</script>
+</head>
+<body>
+	<div class="background-grad"> <!-- background gradient div starts here -->
+		<header class="site-header">
+			<div class="wrapper">
+				<div class="row row--nav">
+					<img src="assets/images/svg/me.svg" class="site-header__logo">
+					<!-- <div class="site-header__menu-icon"></div> -->
+					<!-- <div class="site-header__menu-content"> -->
+						<nav class="primary-nav primary-nav--pull-right">
+							<ul>
+								<li> <a href="./index.html">About</a> </li>
+								<li> <a href="./projects.html">Projects</a> </li>
+								<li class="primary-nav primary-nav__active"> <a href="./notes.html">Notes</a> </li>
+							</ul>
+						</nav>
+					<!-- </div> -->
+				</div>
+			</div>	
+		</header>
+		<div class="large-hero">
+			<!-- <img srcset="assets/images/svg/background-mob.svg 570w, assets/images/svg/background-d.svg 1920w" class="large-hero__img"> -->
+			<picture>
+				<source srcset="assets/images/svg/background-d.svg 1920w, assets/images/svg/background-d.svg 3840w" media="(min-width: 800px)">
+				<source srcset="assets/images/svg/background-tab.svg 990w, assets/images/svg/background-tab.svg 1280w" media="(min-width: 640px)">
+				<img srcset="assets/images/svg/background-mob.svg 640w" alt="Coastal view of ocean and mountains" class="large-hero__img">
+			</picture>
+		</div>
+	</div>  <!-- background gradient div ends here -->
+	
+	<picture>
+		<source srcset="assets/images/svg/city-view-d.svg 990w, assets/images/svg/city-view-d.svg 1280w" media="(min-width: 640px)">
+		<img srcset="assets/images/svg/city-view-m.svg 640w" alt="City view of buildings and mountains">
+	</picture>
+
+	<footer class="site-footer">
+		<div class="wrapper">
+			<div class="site-footer__links">
+				<ul>
+					<li> <a href="#">linkedin</a> </li>
+					<li> <a href="">github</a> </li>
+					<li> <a href="">google</a> </li>
+					<li> <a href="">facebook</a> </li>
+					<!-- <li> <a href="">twitter</a> </li> -->
+				</ul>
+			</div>
+			<p class="site-footer__text">Copyright &copy; 2017 <a href="#">Junaid Abbas</a>. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="/temp/scripts/App.js"></script>
+</body>
+</html>

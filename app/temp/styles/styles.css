@@ -459,13 +459,14 @@ body {
 	background-color: #4ca1af;
 	color: #ead09a;
 	letter-spacing: 1px;
+	text-shadow: 0px 0px 1px rgba(150, 150, 150, 1);
 	line-height: 1.42857143;
-	/*background-image: url(../images/background.svg);*/
 	/*background-color: #4CA1AF;*/
+	/*padding-top: 135px;*/
 }
 
 p {
-	color: #3a3a3a;
+	color: #111;
 }
 
 .background-grad { /* ff3.6+ */ /* safari4+,chrome */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
@@ -854,6 +855,7 @@ img{
 		font-size: 1rem;
 		-webkit-box-sizing: border-box;
 		        box-sizing: border-box;
+		text-shadow: 0px 1px 30px rgba(150, 150, 150, 1);
 	}
 
 @media (min-width: 530px) {
@@ -914,6 +916,7 @@ img{
 .wrapper__main-heading {
 		width:300px;
 		margin-top: 20%;
+		margin-bottom: -90px;
 	}
 
 @media (min-width: 530px) {
@@ -930,6 +933,10 @@ img{
 			margin-top: 8%
 	}
 	}
+
+.wrapper__main-heading--help {
+			margin-top: 15%;
+		}
 
 .page-section {
 	padding: 8rem 0;
@@ -989,6 +996,7 @@ img{
 	}
 
 .headline__sub-heading__help {
+			margin-top: 90px;
 			text-align: center;
 			font-size: 1.2rem;
 		}
@@ -1002,7 +1010,7 @@ img{
 
 .row {
 	/*background-color: yellow;*/
-	margin-top: 30px;
+	margin-top: 120px;
 	padding-left: 10px;
 
 	/*&__btn-4 {
@@ -1013,11 +1021,43 @@ img{
 @media (min-width: 800px) {
 
 .row {
-		margin-top: 20px;
+		margin-top: 100px;
 		margin-left: 15%;
 		width:800px;
 		padding-left: 0
 }
+	}
+
+.row--nav {
+		margin-top:1%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		width: 480px;
+	}
+
+@media (min-width: 530px) {
+
+.row--nav {
+			width: 750px
+	}
+	}
+
+@media (min-width: 800px) {
+
+.row--nav {
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0;
+			width: 1030px
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.row--nav {
+			width: 1204px
+	}
 	}
 
 .row::after {
@@ -1090,9 +1130,7 @@ img{
 	cursor: hand;
 	border-radius: 5px;
 	text-align: center;
-	margin: 40px auto;
-	-webkit-box-shadow: -2px 5px 23px -2px rgba(0,0,0,0.75);
-	box-shadow: -2px 5px 23px -2px rgba(0,0,0,0.75);
+	margin: 10px auto;
 }
 
 @media (min-width: 530px) {
@@ -1121,6 +1159,11 @@ img{
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
+.shadow {
+	-webkit-box-shadow: -3px 8px 15px -5px rgba(0,0,0,0.75);
+box-shadow: -3px 8px 15px -5px rgba(0,0,0,0.75);
+}
+
 .site-footer {
 	background-color: #ead09a;
 	padding: .5rem 0;
@@ -1128,7 +1171,7 @@ img{
 }
 
 .site-footer p {
-		color: #3a3a3a;
+		color: #111;
 	}
 
 .site-footer a {
@@ -1136,7 +1179,7 @@ img{
 	}
 
 .site-footer a:hover {
-		color: #000;
+		color: #111;
 	}
 
 .site-footer__text {
@@ -1158,4 +1201,272 @@ img{
 		display: inline-block;
 		text-align: center;
 		padding-right: 40px;
+	}
+
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+	height: 135px;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+
+	/*&__menu-icon {
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		position: absolute;
+		top: 49px;
+		right: 30px;
+
+		@mixin atSmall {
+			display: none;
+		}
+	}
+
+	&__menu-content {
+		display: none;
+
+		@mixin atSmall {
+			display: inline-block;
+			float: right;
+		}
+
+		&--is-visible {
+			display: block;
+			
+		}
+	}*/
+}
+
+.site-header a {
+		color: #ead09a;
+		font-weight: 600;
+	}
+
+.site-header--white .primary-nav__active a {
+				color: #ad8635;
+				text-shadow: none;
+			}
+
+@media (min-width: 800px) {
+
+.site-header {
+		position: fixed;
+		padding-top: -135px
+		/*opacity: 0;*/
+}
+
+		.site-header--white {
+			opacity: 0;
+		}
+			/*background-color: rgba(255, 255, 255, 1);*/
+			.site-header--white a {
+				color: #c18507;
+				/*font-size: 1.1rem;*/
+			}
+
+		.site-header--nav-up {
+			opacity: 1;
+			background-color: rgba(255, 255, 255, 1);
+		}
+			.site-header--nav-up a {
+				color: #c18507;
+			}
+
+		.site-header--nav-down {
+			opacity: 0;
+			z-index: -10;
+		}
+	}
+
+.site-header__logo {
+		/*background-color: red;*/
+		width: 5rem;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+
+@media (min-width: 530px) {
+
+.site-header__logo {
+			width: 6rem;
+			margin-left: 10px
+	}
+	}
+
+.nav-up {
+	top: -135px;
+	opacity: 1;
+}
+
+.primary-nav {
+	/*background-color: blue;*/
+	text-shadow: none;
+}
+
+.primary-nav--pull-right {
+		float: right;
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+.primary-nav ul::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.primary-nav li{
+		list-style: none;
+		font-size: 0.9rem;
+		float: left;
+		margin-right: 20px;
+		margin-top: 40px;
+	}
+
+@media (min-width: 530px) {
+
+.primary-nav li{
+			margin-right: 25px;
+			margin-top: 45px
+	}
+	}
+
+@media (min-width: 800px) {
+
+.primary-nav li{
+			font-size: 1rem;
+			margin-right: 35px
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.primary-nav li{
+			font-size: 1.08rem;
+			margin-top: 40px;
+			margin-right: 45px
+	}
+	}
+
+.primary-nav a {
+		padding: 5px 0;
+	}
+
+.primary-nav__active a{
+			color: #e09902;
+			text-shadow: 0px 0px 30px rgba(150, 150, 150, 1);
+
+		}
+
+.cloud {
+	position: absolute;
+	width: 120px;
+	top: 375%;
+	right: 20%;
+}
+
+@media (min-width: 530px) {
+
+.cloud {
+		width: 130px;
+		right: 0
+}
+	}
+
+@media (min-width: 800px) {
+
+.cloud {
+		width: 140px;
+		top: 165%;
+		right: 3%
+}
+	}
+
+.cloud__left-cut {
+		width: 90px;
+		top: 303%;
+		left: 0;
+	}
+
+@media (min-width: 530px) {
+
+.cloud__left-cut {
+			width: 105px;
+			top: 196%;
+			left: -1%
+	}
+	}
+
+@media (min-width: 800px) {
+
+.cloud__left-cut {
+			top: 189%;
+			left: 0
+	}
+	}
+
+.cloud__right-cut {
+		width: 100px;
+		top: 200%;
+		right: 0;
+	}
+
+@media (min-width: 530px) {
+
+.cloud__right-cut {
+			width: 105px;
+			top: 315%
+	}
+	}
+
+@media (min-width: 800px) {
+
+.cloud__right-cut {
+			top: 293%;
+			right: 0
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.cloud__right-cut {
+			top: 285%
+	}
+	}
+
+.cloud__bottom {
+		display: none;
+	}
+
+@media (min-width: 530px) {
+
+.cloud__bottom {
+			display: block;
+			width: 130px;
+			top: 388%;
+			left: 30%
+	}
+	}
+
+@media (min-width: 800px) {
+
+.cloud__bottom {
+			width: 140px;
+			top:350%;
+			left:20%
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.cloud__bottom {
+			top: 345%
+	}
 	}
