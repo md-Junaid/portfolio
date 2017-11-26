@@ -6,6 +6,7 @@
 .large-hero {
 	position: relative;
 	height: 100%;
+	overflow: hidden;
 
 	&__text-content {
 		position: absolute;
@@ -17,10 +18,16 @@
 		height: 50%;
 
 		@mixin atSmall {
+			top: 44%;
 			transform: translateY(-10%);
 		}
 
+		@mixin atMedium {
+			top: 42%;
+		}
+
 		@mixin atLarge {
+			top: 50%;
 			transform: translateY(-30%);
 		}
 	}
@@ -51,10 +58,17 @@
 			font-size: 1.1rem;
 		}
 	}
+
+	&__astronaut {
+		position: absolute;
+		top: 86%;
+		width: 120px;
+		left: -120px;
+	}
 }
 
 .svg-wrapper {/*This svg animation was copied from this link "https://codepen.io/seanmccaffery/pen/xBpbG"*/
-	height: 60px;
+	/*height: 10px;*/
     margin: 0 auto;
   	position: relative;
   	top: 30%;

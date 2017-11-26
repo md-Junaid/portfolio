@@ -80,14 +80,10 @@
 			padding-left: 100px;
 		}
 	}
-
-	/*&__btn-4 {
-		float: left;
-	}*/
 }
 
 .circle {
-	background-color: #fff;
+	background-color: #f3f2f1;
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;

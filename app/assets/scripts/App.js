@@ -7,6 +7,7 @@ var btnShadow = new BtnShadow;
 
 var stickyHeader = new StickyHeader();
 
+// var scrollUpNav = new ScrollUpNav($(".shape"), "-10%");
 var scrollUpNav = new ScrollUpNav($(".about-me__myimg"), "20%");
 var scrollUpNav = new ScrollUpNav($(".headline"), "30%");
 var scrollUpNav = new ScrollUpNav($(".cloud__left-cut"), "10%");

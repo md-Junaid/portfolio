@@ -11115,6 +11115,7 @@ var btnShadow = new _BtnShadow2.default();
 
 var stickyHeader = new _StickyHeader2.default();
 
+// var scrollUpNav = new ScrollUpNav($(".shape"), "-10%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".about-me__myimg"), "20%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".headline"), "30%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".cloud__left-cut"), "10%");
