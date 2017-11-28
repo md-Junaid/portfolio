@@ -2,7 +2,6 @@
   "name": "junaid-portfolio",
   "version": "1.0.0",
   "description": "This is portfolio website developed using html, css, & JS.",
-  "main": "gulpfile.js",
   "scripts": {
     "start": "node app",
     "postinstall": "gulp default",
