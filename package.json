@@ -24,7 +24,6 @@
     "lazysizes": "^4.0.0-rc3",
     "normalize.css": "^7.0.0",
     "picturefill": "^3.0.2",
-    "gulp": "^3.9.1",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
@@ -34,6 +33,7 @@
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
+    "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.4.0",
     "gulp-modernizr": "^1.0.0-alpha",
