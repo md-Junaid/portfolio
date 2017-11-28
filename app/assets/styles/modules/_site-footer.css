@@ -8,7 +8,7 @@
 	}
 
 	a {
-		color: #ba8a00;
+		color: $hover;
 	}
 
 	a:hover {

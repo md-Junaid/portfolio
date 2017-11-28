@@ -24,14 +24,8 @@
 	@mixin atMedium {
 		position: fixed;
 		padding-top: -135px;
-		/*opacity: 0;*/
 
 		&--white {
-			/*background-color: rgba(255, 255, 255, 1);*/
-			a {
-				color: #c18507;
-				/*font-size: 1.1rem;*/
-			}
 			opacity: 0;
 		}
 
@@ -39,7 +33,13 @@
 			opacity: 1;
 			background-color: rgba(255, 255, 255, .97);
 			a {
-				color: #c18507;
+				color: #3a3a3a; /* #b79142 #a3771d */
+			}
+
+			.primary-nav__active {
+				a {
+					color: $hover;
+				}
 			}
 		}
 
