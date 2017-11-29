@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is portfolio website developed using html, css, & JS.",
   "scripts": {
+    "start": "node app.js",
     "postinstall": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
