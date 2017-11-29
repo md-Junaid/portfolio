@@ -1,1 +1,1 @@
-web: gulp previewDist
+web: node app.js
