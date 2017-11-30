@@ -1,49 +1,64 @@
 .cloud {
 	position: absolute;
 	width: 120px;
-	top: 375%;
-	right: 20%;
+	right: 31%;
 
 	@mixin atSmall {
 		width: 130px;
-		right: 0;
+		/*right: -140px;*/
+		display: none;
+		top: 135%;
 	}
 
 	@mixin atMedium {
+		display: block;
+		width: 130px;
+		top: 130%;
+		right: 3%;
+	}
+
+	@mixin atLarge {
 		width: 140px;
-		top: 165%;
+		top: 175%;
 		right: 3%;
 	}
 
 	&__left-cut {
 		width: 90px;
-		top: 303%;
-		left: 0;
+		top: 366%;
+		left: -30px;
+		display: block;
 
 		@mixin atSmall {
 			width: 105px;
-			top: 196%;
+			top: 166%;
 			left: -1%;
 		}
 
 		@mixin atMedium {
-			top: 219%;
+			top: 153%;
 			left: 0;
+		}
+
+		@mixin atLarge {
+			top: 219%;
 		}
 	}
 
 	&__right-cut {
 		width: 100px;
-		top: 200%;
+		top: 323%;
 		right: 0;
+		display: none;
 
 		@mixin atSmall {
+			display: block;
 			width: 105px;
-			top: 315%;
+			top: 215%;
 		}
 
 		@mixin atMedium {
-			top: 293%;
+			top: 184%;
 			right: 0;
 		}
 
@@ -58,13 +73,13 @@
 		@mixin atSmall {
 			display: block;
 			width: 130px;
-			top: 388%;
+			top: 270%;
 			left: 30%;
 		}
 
 		@mixin atMedium {
 			width: 140px;
-			top:350%;
+			top:210%;
 			left:20%;
 		}
 

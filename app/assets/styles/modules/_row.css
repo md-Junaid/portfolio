@@ -15,22 +15,8 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding-left: 0;
-		width: 480px;
-
-		@mixin atSmall {
-			width: 750px;
-		}		
-
-		@mixin atMedium {
-			margin-left: auto;
-			margin-right: auto;
-			padding-left: 0;
-			width: 1030px;
-		}
-
-		@mixin atLarge {
-			width: 1204px;
-		}
+		width: 100%;
+		max-width: 100%;
 	}
 
 	@mixin clearfix;
@@ -83,7 +69,7 @@
 }
 
 .circle {
-	background-color: #e0ebe8;
+	background-color: #d4dddd;
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;

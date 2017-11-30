@@ -5,7 +5,7 @@
 @mixin atSmall {
 	@keyframes move {
 		0% {
-			top: 88%;
+			top: 75%;
 			left: -10%;
 			transform: rotate(90deg);
 		}
@@ -13,7 +13,7 @@
 			transform: rotate(350deg);
 		}
 		45% {
-			top: 76.5%;
+			top: 67.5%;
 		}
 		50% {
 			left: 50%;
@@ -22,7 +22,33 @@
 			transform: rotate(460deg);
 		}
 		100% {
-			top: 84%;
+			top: 72%;
+			left: 105%;
+		}
+	}	
+}
+
+@mixin atMedium {
+	@keyframes move {
+		0% {
+			top: 76%;
+			left: -10%;
+			transform: rotate(90deg);
+		}
+		42% {
+			transform: rotate(350deg);
+		}
+		45% {
+			top: 63.5%;
+		}
+		50% {
+			left: 50%;
+		}
+		99% {
+			transform: rotate(460deg);
+		}
+		100% {
+			top: 71%;
 			left: 105%;
 		}
 	}

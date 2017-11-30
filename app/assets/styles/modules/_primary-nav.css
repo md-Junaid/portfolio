@@ -1,6 +1,10 @@
 .primary-nav {
 	text-shadow: none;
 
+	@mixin atLarge {
+		margin-right: 0;
+	}
+
 	a:hover {
 		color: #ba8a00;
 	}
@@ -15,16 +19,33 @@
 		@mixin clearfix;
 	}
 
+	li:nth-child(1) {
+		padding-right: 13px;
+
+		@mixin atSmall {
+			padding-right: 0;
+		}
+	}
+
+	li:nth-child(2) {
+		padding-right: 13px;
+
+		@mixin atSmall {
+			padding-right: 0;
+		}
+	}
+
 	li{
 		list-style: none;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		float: left;
-		margin-right: 20px;
 		margin-top: 40px;
+		font-weight: 600;
 
 		@mixin atSmall {
 			margin-right: 25px;
 			margin-top: 45px;
+			font-size: 1rem;
 		}
 
 		@mixin atMedium {

@@ -11115,11 +11115,12 @@ var btnShadow = new _BtnShadow2.default();
 
 var stickyHeader = new _StickyHeader2.default();
 
-// var scrollUpNav = new ScrollUpNav($(".shape"), "-10%");
+var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".shape"), "0%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".about-me__myimg"), "20%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".headline"), "30%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".cloud__left-cut"), "10%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".headline__main-heading"), "30%");
+var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".headline__sub-heading"), "5%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".about-me__about--skills"), "5%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".row__8-right"), "20%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".cloud__bottom"), "10%");

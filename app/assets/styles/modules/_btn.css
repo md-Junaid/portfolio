@@ -16,15 +16,23 @@
 	&__mail-icon {
 		width: 2.1rem;
 		float: left;
-		margin-left: 35px;
+		margin-left: 20px;
 		margin-top: 14px;
+
+		@mixin atSmall {
+			margin-left: 30px;
+		}
+
+		@mixin atMedium {
+			margin-left: 35px;
+		}
 	}
 
 	&__btn-p {
 		float: left;
 		font-size: 1.2rem;
 		margin-top: 10px;
-		margin-left: 10px;
+		margin-left: 15px;
 	}
 }
 
