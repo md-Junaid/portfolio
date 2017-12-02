@@ -899,6 +899,24 @@ img{
 	}
 	}
 
+.about-me__about--dummy {
+		position: absolute;
+		top: 80%;
+		color: #ead09a;
+		text-align: center;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+
+.about-me__about--dummy a {
+			color: #ba8a00;
+		}
+
+.about-me__about--dummy a:hover {
+			color: #3A3A3A;
+		}
+
 .about-me__about--skills {
 		font-size: 1rem;
 		text-align: center;

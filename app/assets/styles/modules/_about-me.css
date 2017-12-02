@@ -31,6 +31,23 @@
 		}
 	}
 
+	&__about--dummy {
+		position: absolute;
+		top: 80%;
+		color: $mainCreamcolor;
+		text-align: center;
+		left: 50%;
+		transform: translateX(-50%);
+
+		a {
+			color: $links;
+		}
+
+		a:hover {
+			color: $hover;
+		}
+	}
+
 	&__about--skills {
 		font-size: 1rem;
 		text-align: center;
