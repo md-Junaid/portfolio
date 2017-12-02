@@ -1,5 +1,6 @@
 #Layer_1 {
 	animation: move 50s 2s infinite linear;
+	-moz-animation: none;
 }
 
 @mixin atSmall {
@@ -31,7 +32,7 @@
 @mixin atMedium {
 	@keyframes move {
 		0% {
-			top: 76%;
+			top: 72%;
 			left: -10%;
 			transform: rotate(90deg);
 		}
@@ -48,7 +49,7 @@
 			transform: rotate(460deg);
 		}
 		100% {
-			top: 71%;
+			top: 70%;
 			left: 105%;
 		}
 	}
@@ -81,7 +82,7 @@
 }
 
 #left-hand {
-	animation: handSwingLeft 50s 2s infinite ease-in-out;
+	animation: handSwingLeft 50s 2s infinite linear;
 	transform-origin: left bottom;
 }
 
@@ -190,8 +191,10 @@
    	}
 }
 
+
+
 #right-hand {
-	animation: handSwingRight 50s 2s infinite ease-in-out;
+	animation: handSwingRight 50s 2s infinite linear;
 	transform-origin: left top;	
 }
 
@@ -246,6 +249,7 @@
 #right-leg {
 	animation: legSwingRight 50s 2s infinite ease-in-out;
 	transform-origin: left top;	
+	/*-moz-transform-origin: center;*/
 }
 
 @keyframes legSwingRight {
@@ -353,6 +357,7 @@
 #left-leg {
 	animation: legSwingLeft 50s 2s infinite ease-in-out;
 	transform-origin: left top;	
+	/*-moz-transform-origin: center;*/
 }
 
 @keyframes legSwingLeft {

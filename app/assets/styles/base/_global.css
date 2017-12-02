@@ -47,3 +47,10 @@ img{
 		left: -9%;
 	}
 }
+
+.margin{
+
+	&--bottom{
+		margin-bottom: -4.8px;		
+	}
+}

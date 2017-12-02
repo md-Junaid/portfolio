@@ -11126,6 +11126,8 @@ var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".row__8-right
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".cloud__bottom"), "10%");
 var scrollUpNav = new _ScrollUpNav2.default((0, _jquery2.default)(".about-me__about--help"), "30%");
 
+console.log("Astronaut animation will be added later for firefox browsers because of firefox transform properties are very complicated to write.");
+
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {

@@ -11,6 +11,11 @@
 		color: $mainCreamcolor;
 	}
 
+	a:hover {
+		color: $links;
+	}
+
+
 	&--white {
 		.primary-nav__active {
 			a {
@@ -32,7 +37,11 @@
 			opacity: 1;
 			background-color: rgba(255, 255, 255, .97);
 			a {
-				color: $hover; /* #b79142 #a3771d */
+				color: $links; /* #b79142 #a3771d */
+			}
+
+			a:hover {
+				color: $hover;
 			}
 
 			.primary-nav__active {

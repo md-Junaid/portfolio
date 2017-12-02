@@ -17,3 +17,5 @@ var scrollUpNav = new ScrollUpNav($(".about-me__about--skills"), "5%");
 var scrollUpNav = new ScrollUpNav($(".row__8-right"), "20%");
 var scrollUpNav = new ScrollUpNav($(".cloud__bottom"), "10%");
 var scrollUpNav = new ScrollUpNav($(".about-me__about--help"), "30%");
+
+console.log("Astronaut animation will be added later for firefox browsers because of firefox transform properties are very complicated to write.");

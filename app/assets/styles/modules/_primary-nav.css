@@ -5,10 +5,6 @@
 		margin-right: 0;
 	}
 
-	a:hover {
-		color: #ba8a00;
-	}
-
 	&--pull-right {
 		float: right;
 	}
@@ -66,7 +62,7 @@
 
 	&__active {
 		a{
-			color: $hover;
+			color: $links;
 		}
 	}
 }
