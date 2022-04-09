@@ -4,6 +4,8 @@
   "description": "This is portfolio website developed using html, css, & JS.",
   "scripts": {
     "postinstall": "gulp build",
+    "gulp": "gulp",
+    "minify": "gulp minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
