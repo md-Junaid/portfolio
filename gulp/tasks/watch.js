@@ -1,35 +1,46 @@
-var gulp 		= require('gulp'),
-	watch 		= require('gulp-watch'),
-	browserSync = require('browser-sync').create();
+const { src, dest, watch, series } = require('gulp');
+// const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
+const terser = require('gulp-terser');
+const browsersync = require('browser-sync').create();
 
-gulp.task('watch', function() {
+function cssTask(){
+  return src('./app/assets/styles/**/*.css', { sourcemaps: true })
+      .pipe(postcss([cssnano()]))
+      .pipe(dest('./app/temp/styles/styles.css', { sourcemaps: '.' }));
+}
 
-	browserSync.init({
-		notify: false,
-		server: {
-			baseDir: "app"
-		}
-	});
+// JavaScript Task
+function jsTask(){
+  return src('./app/assets/scripts/**/*.js', { sourcemaps: true })
+    .pipe(terser())
+    .pipe(dest('./app/temp/scripts/App.js', { sourcemaps: '.' }));
+}
 
-	watch('./app/index.html', function() {
-		browserSync.reload();
-	})
+function browsersyncServe(cb){
+  browsersync.init({
+    server: {
+      baseDir: 'app'
+    }    
+  });
+  cb();
+}
 
-	watch('./app/assets/styles/**/*.css', function() {
-		gulp.start('cssInject');
-	})
+function browsersyncReload(cb){
+  browsersync.reload();
+  cb();
+}
+// Watch Task
+function watchTask(){
+  watch('*.html', browsersyncReload);
+  watch(['./app/assets/styles/**/*.css', './app/assets/scripts/**/*.js'], series(cssTask, jsTask, browsersyncReload));
+}
 
-	watch('./app/assets/scripts/**/*.js', function() {
-		gulp.start('scriptsRefresh');
-	})
-});
-
-
-gulp.task('cssInject', ['styles'],function() {
-	return gulp.src('./app/temp/styles/styles.css')
-		.pipe(browserSync.stream());
-});
-
-gulp.task('scriptsRefresh', ['scripts'], function(){
-	browserSync.reload();
-});
+// Default Gulp Task
+exports.default = series(
+  cssTask,
+  jsTask,
+  browsersyncServe,
+  watchTask
+);
